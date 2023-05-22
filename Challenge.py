@@ -1,8 +1,18 @@
 def cadastrar_cliente():
+    print("Vamos realizar seu cadastro :)")
+    print("Para isso, precisamos do seu nome, email e CPF.")
+    print("Também é necessário que você crie uma senha e ela deve ter no mínimo 8 caracteres.")
+    print("")
+
     nome = input("Digite seu nome: ")
     email = input("Digite seu email: ")
     cpf = input("Digite seu CPF: ")
     senha = input("Crie uma senha: ")
+    while len(senha) < 8:
+        print("")
+        print("A senha deve conter no mínimo 8 caracteres!!")
+        print("")
+        senha = input("Crie uma senha: ")
     print("")
     
     print("Cadastro concluído com sucesso!!")
@@ -10,6 +20,10 @@ def cadastrar_cliente():
     print("")
 
 def cadastrar_bicicleta():
+    print("Vamos realizar o cadastro da sua bicicleta :)")
+    print("Para isso, precisamos da marca, modelo, número de série e do valor de sua bicicleta.")
+    print("")
+
     marca = input("Digite a marca da bicicleta: ")
     modelo = input("Digite o modelo da  bicicleta: ")
     numeroSerie = input("Digite o número de série da bicicleta: ")
@@ -21,6 +35,10 @@ def cadastrar_bicicleta():
     print("")
 
 def cadastrar_empresa_fabricante():
+    print("Vamos realizar o cadastro da empresa fabricante de sua bicicleta :)")
+    print("Para isso, precisamos do nome, CNPJ e site da empresa.")
+    print("")
+
     nome = input("Digite o nome da empresa: ")
     cnpj = input("Digite o CNPJ da  empresa: ")
     site = input("Digite o site da empresa: ")
@@ -31,6 +49,10 @@ def cadastrar_empresa_fabricante():
     print("")
 
 def cadastrar_pneu():
+    print("Vamos realizar o cadastro dos penus de sua bicicleta :)")
+    print("Para isso, precisamos do tamanho do aro, tempo de uso em anos e do valor dos pneus.")
+    print("")
+
     aro = input("Digite o tamanho do aro: ")
     tempo_uso = input("Digite o tempo de uso dos pneus (em anos): ")
     valor = float(input("Digite o valor do pneu: "))
@@ -41,6 +63,10 @@ def cadastrar_pneu():
     print("")
 
 def cadastrar_pedal():
+    print("Vamos realizar o cadastro dos pedais de sua bicicleta :)")
+    print("Para isso, precisamos da marca e do valor dos pedais.")
+    print("")
+
     marca = input("Digite a marca do pedal: ")
     valor = float(input("Digite o valor do pedal: "))
     print("")
@@ -50,6 +76,11 @@ def cadastrar_pedal():
     print("")
 
 def cadastrar_foto():
+    print("Vamos realizar o cadastro da foto da bicicleta :)")
+    print("Para isso, precisamos apenas de uma foto da sua bicicleta.")
+    print("Ex: foto.png")
+    print("")
+
     foto = input("Insira a foto: ")
     print("")
     
@@ -58,6 +89,10 @@ def cadastrar_foto():
     print("")
 
 def cadastrar_documentos():
+    print("Vamos realizar o cadastro dos documentos da bicicleta :)")
+    print("Para isso, precisamos da nota fiscal e do boleto.")
+    print("")
+
     documentos = []
 
     nota_fiscal = input("Insira a nota fiscal: ")
@@ -71,6 +106,10 @@ def cadastrar_documentos():
     print("")
 
 def cadastrar_acessorio():
+    print("Vamos realizar o cadastro dos acessórios de sua bicicleta :)")
+    print("Para isso, precisamos da descrição e do valor do acessório.")
+    print("")
+
     descricao = input("Escreva uma breve descrição do acessório: ")
     valor = float(input("Digite o valor do acessório: "))
     print("")
